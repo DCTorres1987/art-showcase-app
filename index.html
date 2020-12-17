@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Danielle Torres's Art Show</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <section>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="art_pics/bear.jpg">
+                    <h2>Click Again To Close</h2>
+                    <div class="content">
+                        <h3>Art Caption One</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="art_pics/hawk.jpg">
+                    <h2>Click Again To Close</h2>
+                    <div class="content">
+                        <h3>Art Caption Two</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="art_pics/wolf.jpg">
+                    <h2>Click Again To Close</h2>
+                    <div class="content">
+                        <h3>Art Caption Three</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="art_pics/day-on-the-beach.jpg">
+                    <h2>Click Again To Close</h2>
+                    <div class="content">
+                        <h3>Art Caption Four</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="art_pics/mrytlebeach-sunrise.jpg">
+                    <h2>Click Again To Close</h2>
+                    <div class="content">
+                        <h3>Art Caption Five</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="art_pics/sea.jpg">
+                    <h2>Click Again To Close</h2>
+                    <div class="content">
+                        <h3>Art Caption Six</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            let imgBx = document.querySelectorAll('.imgBx');
+            imgBx.forEach(popup => popup.addEventListener('click', () =>
+            {
+                popup.classList.toggle('active')
+            }))
+        </script>
+    </body>
+</html>
