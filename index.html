@@ -2,77 +2,50 @@
 <html>
     <head>
         <title>Danielle Torres's Art Show</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     </head>
     <body>
-        <section>
-            <div class="box">
-                <div class="imgBx">
-                    <img src="art_pics/bear.jpg">
-                    <h2>Click Again To Close</h2>
-                    <div class="content">
-                        <h3>Art Caption One</h3>
-                        <p>Description</p>
-                    </div>
+        <div class ="container text-center">
+            <h1>My Art Showcase</h1>
+            <p>Checkout my latest work!</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="art_pics/bear.jpg"><img src="art_pics/bear.jpg" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="art_pics/day-on-the-beach.jpg"><img src="art_pics/day-on-the-beach.jpg" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="art_pics/hawk.jpg"><img src="art_pics/hawk.jpg" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="art_pics/wolf.jpg"><img src="art_pics/wolf.jpg" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="art_pics/mrytlebeach-sunrise.jpg"><img src="art_pics/mrytlebeach-sunrise.jpg" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="art_pics/sea.jpg"><img src="art_pics/sea.jpg" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="art_pics/sunset.jpg"><img src="art_pics/sunset.jpg" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="art_pics/lanscape.jpg"><img src="art_pics/lanscape.jpg" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="art_pics/the-walk.jpg"><img src="art_pics/the-walk.jpg" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="art_pics/elephant.jpg"><img src="art_pics/elephant.jpg" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="art_pics/hands.jpg"><img src="art_pics/hands.jpg" class="img-fluid">
+                    </a>
                 </div>
             </div>
-            <div class="box">
-                <div class="imgBx">
-                    <img src="art_pics/hawk.jpg">
-                    <h2>Click Again To Close</h2>
-                    <div class="content">
-                        <h3>Art Caption Two</h3>
-                        <p>Description</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgBx">
-                    <img src="art_pics/wolf.jpg">
-                    <h2>Click Again To Close</h2>
-                    <div class="content">
-                        <h3>Art Caption Three</h3>
-                        <p>Description</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgBx">
-                    <img src="art_pics/day-on-the-beach.jpg">
-                    <h2>Click Again To Close</h2>
-                    <div class="content">
-                        <h3>Art Caption Four</h3>
-                        <p>Description</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgBx">
-                    <img src="art_pics/mrytlebeach-sunrise.jpg">
-                    <h2>Click Again To Close</h2>
-                    <div class="content">
-                        <h3>Art Caption Five</h3>
-                        <p>Description</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgBx">
-                    <img src="art_pics/sea.jpg">
-                    <h2>Click Again To Close</h2>
-                    <div class="content">
-                        <h3>Art Caption Six</h3>
-                        <p>Description</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <script>
-            let imgBx = document.querySelectorAll('.imgBx');
-            imgBx.forEach(popup => popup.addEventListener('click', () =>
-            {
-                popup.classList.toggle('active')
-            }))
-        </script>
+        </div>
+       
     </body>
 </html>
