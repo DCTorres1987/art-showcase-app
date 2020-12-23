@@ -64,7 +64,22 @@ header .menu ul li.btn a:hover
 {
     border-radius: 15px;
     border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.home .container
+{
+    max-width: 1266px;
+    margin: 0 auto;
+}
+
+.home .person
+{
+    float: right;
+    margin: 70px 180px 0;
+    position: relative;
+    border-radius: 70px 0 70px 0;
+    overflow: hidden;
 }
 
 .container
