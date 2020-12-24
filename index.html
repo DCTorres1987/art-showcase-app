@@ -9,7 +9,7 @@
 
     </head>
     <body>
-        <section class="banner" id="home">
+        <section class="banner" id="#">
             <div class="wrapper">
                 <header>
                     <div class="logo">
@@ -24,10 +24,10 @@
                     </div>
                 </header>
                 <div class="home">
-                    <div class="landing-container">
+                    <div class="container">
                         <div class="person">
                             <span class="person-overlay"></span>
-                            <img src="images/Me_Porf3.jpg" alt="">
+                            <img src="images/Me_Porf.jpg" alt="">
                         </div>
                         <div class="home-text">
                             <h6 class="engineer">Engineer</h6>
@@ -118,6 +118,30 @@
                     delay: 1000,
                     duration: 1500,
                     easing: 'easeInSine'
+                })
+
+                anime({
+                    targets: '.home .person img',
+                    opacity: 1,
+                    delay: 1500,
+                    duration: 1500,
+                    easing: 'easeInSine' 
+                })
+
+                anime({
+                    targets: '.engineer span',
+                    opacity: 1,
+                    duration: 1500,
+                    easing: 'easeInSine',
+                    delay: anime.stagger(100, {start: 3000})
+                })
+
+                anime({
+                    targets: '.name span',
+                    opacity: 1,
+                    duration: 3000,
+                    easing: 'easeInSine',
+                    delay: anime.stagger(100, {start: 4500})
                 })
             });
 
