@@ -142,7 +142,10 @@ header .menu ul li.btn a:hover
 
 .home .person img,
 .engineer span,
-.name span
+.name span,
+.logo,
+.menu li,
+.small-intro span
 {
     opacity: 0;
 }
