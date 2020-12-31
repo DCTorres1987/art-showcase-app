@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 body
 {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+    box-sizing: border-box;
     background-image: linear-gradient(to right, rgb(44, 46, 53), #232631);
-    font-family: Open sans;
+    font-family: 'Poppins', sans-serif;
 }
 
 *
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     outline: none;
+}
+
+section
+{
+    padding: 100px;
 }
 
 
@@ -152,34 +156,56 @@ header .menu ul li.btn a:hover
 
 /* _____________________________________________ */
 
-.showcase .art-container
+.showcase
 {
-    margin-top: 700px;
-    color: #fff;
+    padding: 20px;
+    width: 1280px;
+    margin: 40px auto;
 }
 
-.heading
+.showcase ul
 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #fff;
-}
-
-.heading h2
-{
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.col-md-4
-{
-    margin-top: 10px;
+    display: flex;
     margin-bottom: 10px;
 }
 
-img:hover
+.showcase ul li
 {
-    transform: scale(1.1);
-    transition: ls;
+    list-style: none;
+    background: #eee;
+    padding: 8px 20px;
+    margin: 5px;
+    margin-top: 650px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+section ul li.active
+{
+    background: #03a9f4;
+    color: #fff;
+}
+
+.art
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.art .itemBox
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+
+.art .itemBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
