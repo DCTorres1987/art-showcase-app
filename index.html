@@ -63,7 +63,11 @@
                <div class="itemBox graphite"><img src="art_pics/wolf.jpg"></div>
            </div>
         </section>
-    
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -125,19 +129,21 @@
                     delay: anime.stagger(50, {start: 11000})
                 })
             });
+        </script>
 
-       window.addEventListener('scroll', function(){
-        var header = document.querySelector('header');
-        header.classList.toggle('sticky', window.scrollY > 0);
-      });
-
-      function toggleMenu(){
-        var menuToggle = document.querySelector('.toggle');
-        var menu = document.querySelector('.menu');
-        menuToggle.classList.toggle('active');
-        menu.classList.toggle('active');
-      }
-
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.list').click(function(){
+                    const value = $(this).attr('data-filter');
+                    if (value == 'all'){
+                        $('.itemBox').show('1000');
+                    }
+                    else {
+                        $('.itemBox').not('.'+value).hide('1000');
+                        $('.itemBox').filter('.'+value).show('1000');
+                    }
+                })
+            })
         </script>
     </body>
 </html>
