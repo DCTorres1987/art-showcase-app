@@ -42,7 +42,7 @@
 
         <section class="showcase"  id="showcase">
            <ul>
-               <li class="list" data-filter="All">ALL</li>
+               <li class="list active" data-filter="all">ALL</li>
                <li class="list" data-filter="acrylic">Acrylic</li>
                <li class="list" data-filter="graphite">Graphite</li>
                <li class="list" data-filter="digital">Digital</li>
@@ -142,6 +142,10 @@
                         $('.itemBox').not('.'+value).hide('1000');
                         $('.itemBox').filter('.'+value).show('1000');
                     }
+                })
+
+                $('.list').click(function(){
+                    $(this).addClass('active').siblings().removeClass('active');
                 })
             })
         </script>
