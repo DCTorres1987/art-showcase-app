@@ -27,14 +27,19 @@ section
 
 header
 {
-
+    display: flex;
     padding: 40px 50px;
 }
 
 header .logo
 {
-    float: left;
-    height: auto;
+    color: #fff;
+    font-size: 21px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
 }
 
 header .menu
@@ -49,13 +54,6 @@ header .menu ul
     display: flex;
 }
 
-header .menu ul li
-{
-    display: inline-block;
-    margin: 0 20px;
-    flex: auto;
-}
-
 header .menu ul li:last-child
 {
     margin-right: 0;
@@ -66,6 +64,12 @@ header .menu ul li a{
     text-decoration: none;
     text-transform: uppercase;
     transition: all ease 0.5s;
+    position: relative;
+    display: inline-block;
+    margin: #fff;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
 }
 
 header .menu ul li a:hover{
