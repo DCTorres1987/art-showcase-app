@@ -19,27 +19,19 @@ section
     padding: 100px;
 }
 
-.wrapper
-{
-    width: 100%;
-}
-
 
 header
 {
-    display: flex;
+
     padding: 40px 50px;
+    overflow: hidden;
+    float:  left;
 }
 
 header .logo
 {
-    color: #fff;
-    font-size: 21px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 2px;
-    
+    float: left;
+    height: auto;
 }
 
 header .menu
@@ -54,6 +46,13 @@ header .menu ul
     display: flex;
 }
 
+header .menu ul li
+{
+    display: inline-block;
+    margin: 0 20px;
+    flex: auto;
+}
+
 header .menu ul li:last-child
 {
     margin-right: 0;
@@ -64,12 +63,6 @@ header .menu ul li a{
     text-decoration: none;
     text-transform: uppercase;
     transition: all ease 0.5s;
-    position: relative;
-    display: inline-block;
-    margin: #fff;
-    margin: 0 15px;
-    color: #fff;
-    text-decoration: none;
 }
 
 header .menu ul li a:hover{
@@ -108,10 +101,10 @@ header .menu ul li.btn a:hover
     overflow: hidden;
 }
 
-.home .person img
+img
 {
     filter: brightness(-3);
-    height: auto;
+    float: right;
 }
 
 .home .person-overlay
@@ -131,6 +124,7 @@ header .menu ul li.btn a:hover
     color: #fff;
     margin-top: 220px;
     position: absolute;
+    height: auto;
 }
 
 .home-text h6
@@ -157,6 +151,7 @@ header .menu ul li.btn a:hover
 {
     margin-right: 120px;
     display: inline-block;
+    height: auto;
 }
 
 .home-text .name span:last-child
@@ -176,6 +171,9 @@ header .menu ul li.btn a:hover
 
 
 
+
+
+
 /* _____________________________________________ */
 
 .showcase
@@ -189,6 +187,7 @@ header .menu ul li.btn a:hover
 {
     display: flex;
     margin-bottom: 10px;
+    float: left;
 }
 
 .showcase ul li
@@ -197,9 +196,11 @@ header .menu ul li.btn a:hover
     background: #eee;
     padding: 8px 20px;
     margin: 5px;
-    margin-top: 650px;
+    margin-top: 600px;
     letter-spacing: 1px;
     cursor: pointer;
+    display: flex;
+    float: left;
 }
 
 section ul li.active
@@ -212,6 +213,7 @@ section ul li.active
 {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .art .itemBox
@@ -221,6 +223,8 @@ section ul li.active
     height: 300px;
     margin: 5px;
     overflow: hidden;
+    
+    flex-wrap: wrap;
 }
 
 .art .itemBox img
@@ -232,9 +236,38 @@ section ul li.active
     height: 100%;
     transition: all 0.5s ease;
     object-fit: cover;
+    flex-wrap: wrap;
+    display: flex;
 
 }
 
 .art .itemBox:hover img {
     transform: scale(1.1);
 }
+
+@media only screen and (max-width: 991px) {
+    /* For tablets: */
+    .banner,
+    .showcase,
+    .home-text,
+    .wrapper,
+    .showcase ul li
+    {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .banner,
+    .home-text,
+    .wrapper,
+    .showcase ul li,
+    .showcase {
+      width: 100%;
+    }
+  }
