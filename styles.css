@@ -39,15 +39,16 @@ header .menu
 
 header .menu ul li
 {
+    /* property specifies the display behavior (the type of rendering box) of an element */
     display: inline-block;
+    /* move font to right 20px */
     margin: 0 20px;
-    flex: auto;
 }
 
-header .menu ul li:last-child
+/* header .menu ul li:last-child
 {
     margin-right: 0;
-}
+} */
 
 header .menu ul li a{
     /* changes property values smoothly over a duration */
