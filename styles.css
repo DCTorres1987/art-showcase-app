@@ -11,7 +11,7 @@ body
 
 section
 {
-    padding: 100px;
+    padding: 20%;
 }
 
 header
@@ -21,19 +21,15 @@ header
 
 header .logo
 {
-    float: left;
-    height: auto;
-}
-
-header .logo .img
-{
     position: absolute;
-    top: auto;
+    left: 10%;
 }
 
 header .menu
 {
+/* float property specifies how an element should float. */
     float: right;
+    /* the element will automatically adjust its height to allow its content to be displayed correctly. */
     height: auto;
 }
 
@@ -42,7 +38,7 @@ header .menu ul li
     /* property specifies the display behavior (the type of rendering box) of an element */
     display: inline-block;
     /* move font to right 20px */
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 /* header .menu ul li:last-child
@@ -53,6 +49,7 @@ header .menu ul li
 header .menu ul li a{
     /* changes property values smoothly over a duration */
     transition: all ease 0.5s;
+    
     /* changes menu font is white */
     color: #fff;
     /* makes font uppercase */
