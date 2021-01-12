@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 *
 {
@@ -168,6 +169,25 @@ body
     bottom: 60px;
     left: 160px;
     position: absolute;
+}
+
+.social-icons .fa {
+    margin-right: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.social-icons:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 64px;
+    background: #fff;
+    left: -75px;
+    top: 8px;
 }
 /* _____________________________________________ */
 
