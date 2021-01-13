@@ -189,9 +189,32 @@ body
     left: -75px;
     top: 8px;
 }
+
+.social-icons .fa:hover {
+    color: #0099ff;
+}
+
+@media (max-width: 992px) {
+    .nav-menu {
+        display: none;
+    }
+    .nav-bar {
+        padding: 20px 40px;
+    }
+    .content .content-text {
+        padding: 20px 40px;
+    }
+    .content .content-text h1 {
+        font-size: 40px;
+    }
+    .bars>div {
+        top: 58px;
+        right: 30px;
+    }
+}
 /* _____________________________________________ */
 
-/* .showcase
+.showcase
 {
     padding: 20px;
     width: 1280px;
@@ -251,4 +274,4 @@ body
 .art .itemBox:hover img {
     transform: scale(1.1);
 }
- */
+
