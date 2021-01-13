@@ -211,6 +211,12 @@ body
         top: 58px;
         right: 30px;
     }
+    .showcase ul {
+        padding: 20px 40px;
+    }
+    .showcase .art {
+        display: flex;
+    }
 }
 /* _____________________________________________ */
 
