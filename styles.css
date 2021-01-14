@@ -254,6 +254,7 @@ body
 {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .art .itemBox
@@ -263,11 +264,11 @@ body
     height: 300px;
     margin: 5px;
     overflow: hidden;
+    
 }
 
 .art .itemBox img
 {
-   
     top: 0;
     left: 0;
     width: 100%;
@@ -281,3 +282,9 @@ body
     transform: scale(1.1);
 }
 
+@media screen and (min-width: 334px) {
+    .art .itemBox {
+        width: 50%;
+        float: left;
+    }
+}
