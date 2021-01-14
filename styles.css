@@ -281,10 +281,3 @@ body
 .art .itemBox:hover img {
     transform: scale(1.1);
 }
-
-@media screen and (min-width: 334px) {
-    .art .itemBox {
-        width: 50%;
-        float: left;
-    }
-}
