@@ -218,13 +218,14 @@ body
 {
     padding: 20px;
     width: 100%;
+    margin-left: 40px;
     /* margin: 30px auto; */
 
 }
 
 .showcase .showcase-text h3 {
     font-family: "Josefin Sans", sans-serif;
-    margin-bottom: 18px;
+    margin-top: 14%;
     color: #dedada;
     font-size: 20px;
     font-weight: normal;
@@ -242,7 +243,7 @@ body
     background: #eee;
     padding: 8px 20px;
     margin: 5px;
-    margin-top: 430px;
+    margin-top: 34px;
     letter-spacing: 1px;
     cursor: pointer;
     text-align: center;
