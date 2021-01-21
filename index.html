@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        
+        <div class="toggle" onclick="toggleMenu();"></div>
         <div class="container">
             <div class="nav-bar">
                 <div class="nav-logo">
@@ -18,7 +18,7 @@
             <div class="nav-menu">
                 <ul>
                     <li><a href="#">My Life</a></li>
-                    <li><a href="#">Art Showcase</a></li>
+                    <li><a href="#showcase" onclick="toggleMenu();">Art Showcase</a></li>
                     <li><a href="#">Contact Me</a></li>
                 </ul>
             </div>
@@ -31,10 +31,11 @@
                 <img src="images/Me_Porf.jpg" alt="">
             </div>
             <div class="content-text">
+                <div class="toggle" onclick="toggleMenu();"></div>
                 <h3>Hello, I am</h3>
                 <h1>Danielle Torres</h1>
                 <p>Artist * Full Stack Software Engineer</p>
-                <button type="button" class="btn">My Work</button>
+                <a href="#showcase" onclick="toggleMenu();"><button type="button" class="btn" >My Work</button></a>
             </div>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/danielle-torres-96079876/" target="_blank"><i class="fa fa-linkedin"></i></a>
