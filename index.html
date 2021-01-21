@@ -8,43 +8,47 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="toggle" onclick="toggleMenu();"></div>
-        <div class="container">
-            <div class="nav-bar">
-                <div class="nav-logo">
-                    <img src="images/white_logo_transparent_background.png" alt="">
+        
+        <section class="landing">
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <div class="container">
+                <div class="nav-bar">
+                    <div class="nav-logo">
+                        <img src="images/white_logo_transparent_background.png" alt="">
+                    </div>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="#">My Life</a></li>
+                        <li><a href="#showcase" onclick="toggleMenu();">Art Showcase</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="bars">
+                    <div></div>
+                </div>
+            </div>        
+
+            <div class="content">
+                <div class="content-image">
+                    <img src="images/Me_Porf.jpg" alt="">
+                </div>
+                <div class="content-text">
+                    <div class="toggle" onclick="toggleMenu();"></div>
+                    <h3>Hello, I am</h3>
+                    <h1>Danielle Torres</h1>
+                    <p>Artist * Full Stack Software Engineer</p>
+                    <a href="#showcase" onclick="toggleMenu();"><button type="button" class="btn" >My Work</button></a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/danielle-torres-96079876/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/DCTorres1987" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.dctorresportfolio.com/" target="_blank"><i class="fa fa-globe"></i></a>
                 </div>
             </div>
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="#">My Life</a></li>
-                    <li><a href="#showcase" onclick="toggleMenu();">Art Showcase</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                </ul>
-            </div>
-            <div class="bars">
-                <div></div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="content-image">
-                <img src="images/Me_Porf.jpg" alt="">
-            </div>
-            <div class="content-text">
-                <div class="toggle" onclick="toggleMenu();"></div>
-                <h3>Hello, I am</h3>
-                <h1>Danielle Torres</h1>
-                <p>Artist * Full Stack Software Engineer</p>
-                <a href="#showcase" onclick="toggleMenu();"><button type="button" class="btn" >My Work</button></a>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/danielle-torres-96079876/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/DCTorres1987" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="https://www.dctorresportfolio.com/" target="_blank"><i class="fa fa-globe"></i></a>
-            </div>
-        </div>
+        </section>
 
-        <section class="about" id="about">
+        <section class="about">
             <div class="heading">
               <h2>
                 About Me<br><br>
@@ -95,6 +99,7 @@
                <div class="itemBox graphite"><img src="art_pics/wolf.jpg" width="600" height="400"></div>
            </div>
         </section>
+
         <script
         src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="

@@ -14,6 +14,16 @@ body
     background: #1c1c1c;
 }
 
+section .landing
+{
+    padding: 18px;
+}
+
+.about
+{
+    padding: 200px 20px;
+}
+
 .nav-bar {
     display: flex;
     padding: 40px 70px;
@@ -214,14 +224,32 @@ body
     .showcase {
         margin-top: 368px;
     }
+    .landing{     
+            padding: 18px 50px;    
+
+    }
+    .about{     
+        padding: 500px 20px;    
+
+    }
+}
+
+@media (max-width: 600px) {
+    .landing
+    {
+        padding: 20px 20px;
+    }
+    .about
+    {
+        padding: 400px 20px;
+    }
 }
 /* _____________________________________________ */
 
-/* .heading
+.heading
 {
     width:100%;
     text-align: center;
-    margin-bottom: 50px;
     color: #fff;
 }
 
@@ -232,11 +260,11 @@ body
 }
 
 
-.content
+/* .content
 {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .contentBx h3
 {
@@ -248,7 +276,7 @@ body
 {
     min-width: 50%;
     color: #fff;
-} */
+}
 
 /* _____________________________________________ */
 
