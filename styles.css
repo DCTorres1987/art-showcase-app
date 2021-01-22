@@ -14,14 +14,11 @@ body
     background: #1c1c1c;
 }
 
-section .landing
-{
-    padding: 18px;
-}
 
 .about
 {
     padding: 200px 20px;
+    position: relative;
 }
 
 .nav-bar {
@@ -222,14 +219,18 @@ section .landing
         right: 30px;
     }
     .showcase {
-        margin-top: 368px;
+        margin-top: 100px;
     }
     .landing{     
             padding: 18px 50px;    
 
     }
     .about{     
-        padding: 500px 20px;    
+        padding: 200px 20px;    
+
+    }
+    .showcase{     
+        padding: 100px 20px;    
 
     }
 }
@@ -241,7 +242,7 @@ section .landing
     }
     .about
     {
-        padding: 400px 20px;
+        padding: 300px 20px;
     }
 }
 /* _____________________________________________ */
@@ -285,13 +286,13 @@ section .landing
     padding: 20px;
     width: 100%;
     margin-left: 40px;
+    position: relative;
     /* margin: 30px auto; */
 
 }
 
 .showcase .showcase-text h3 {
     font-family: "Josefin Sans", sans-serif;
-    margin-top: 14%;
     color: #dedada;
     font-size: 20px;
     font-weight: normal;
