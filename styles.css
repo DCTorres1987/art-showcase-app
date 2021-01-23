@@ -15,7 +15,7 @@ body
 }
 
 
-.about
+section
 {
     padding: 200px 20px;
     position: relative;
@@ -220,30 +220,23 @@ body
     }
     .showcase {
         margin-top: 100px;
-    }
-    .landing{     
-            padding: 18px 50px;    
 
     }
-    .about{     
-        padding: 200px 20px;    
-
+    section
+    {
+        padding: 200px 20px;
+        position: relative;
     }
-    .showcase{     
-        padding: 100px 20px;    
 
-    }
 }
 
 @media (max-width: 600px) {
-    .landing
+    section
     {
-        padding: 20px 20px;
+        padding: 200px 20px;
+        position: relative;
     }
-    .about
-    {
-        padding: 300px 20px;
-    }
+
 }
 /* _____________________________________________ */
 
