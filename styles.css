@@ -21,6 +21,11 @@ section
     position: relative;
 }
 
+.navbar .conent {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+}
 
 .nav-bar {
     display: flex;
@@ -38,7 +43,7 @@ section
 }
 
 .nav-menu ul {
-    display: inline;
+    display: inline-flex;
     margin-left: 40px;
 }
 
@@ -57,19 +62,17 @@ section
 }
 
 .nav-menu ul li {
-    display: inline-block;
     list-style: none;
-    padding: 12px 18px;
 } 
 
 .nav-menu ul li a {
     text-decoration: none;
-    text-transform: uppercase;
     color: #c1c1c1;
     font-size: 14px;
     font-family: "Josefin Sans", sans-serif;
-    letter-spacing: 2px;
-    cursor: pointer;
+    margin-left: 25px;
+    cursor: pointer;    
+    text-transform: uppercase;
 }
 
 .bars>div {
@@ -202,10 +205,7 @@ section
     color: #0099ff;
 }
 
-@media (max-width: 992px) {
-    .nav-menu {
-        display: none;
-    }
+@media (max-width: 868px) {
     .nav-bar {
         padding: 20px 40px;
     }
